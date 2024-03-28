@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: sdw2024
+  datasource:
+    url: jdbc:h2:mem:sdw2024
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ''
+  h2:
+    console:
+      enabled: true
+generative-ai:
+  provider: ${GENERATIVE_AI_PROVIDER}
+chat-gpt:
+  base-url: https://api.openai.com
+  api-key: ${OPEN_API_KEY}
+gemini:
+  base-url: https://generativelanguage.googleapis.com
+  api-key: ${GEMINI_API_KEY}
